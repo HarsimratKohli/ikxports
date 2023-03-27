@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Product 1",
+        "image_src": "Image1",
+        "description": "Text for image 1"
+    },
+    {
+        "name": "Product 2",
+        "image_src": "Image2",
+        "description": "Text for image 2"
+    },
+    {
+        "name": "Product 3",
+        "image_src": "Image3",
+        "description": "Text for image 3"
+    },
+    {
+        "name": "Product 4",
+        "image_src": "Image4",
+        "description": "Text for image 4"
+    },
+    {
+        "name": "Product 5",
+        "image_src": "Image5",
+        "description": "Text for image 5"
+    },
+    {
+        "name": "Product 6",
+        "image_src": "Image6",
+        "description": "Text for image 6"
+    }
+]

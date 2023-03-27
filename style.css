@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial,Helvetica,sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+    overflow-y: auto;  
+}
+
+.header {
+    padding: 1%;
+    background-color: rgb(145 193 204);
+}
+
+.left_header_icon {
+    float: left;
+    padding-top: 3px;
+}
+
+.header-text{
+    float: right;
+    justify-content: end;
+    color: azure;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.top-fixed{
+    position: fixed;
+    display: grid;
+    top: 0px;
+    width: 100%;
+    z-index: 9;
+}
+
+.container-top {
+    background: white;
+    border-bottom: 1px solid rgb(145 193 204);
+    position: relative;
+
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:right;
+    padding-top: 10px;
+}
+
+.nav-l {
+    padding: 10px;
+    text-decoration: none
+}
+
+.nav-l:link{
+    color: rgb(94, 94, 94);
+}
+
+.nav-l:hover{
+    color: rgb(145 193 204);
+}
+
+.quote_btn {
+    background-color: rgb(145 193 204);
+    border: 1px solid rgb(145 193 204);
+    border-radius: 8px;
+    height: auto;
+    padding: 5px;
+    font: inherit;
+    color: azure;
+}
+
+.quote_btn:hover {
+    background-color: rgb(113, 133, 137);
+}
+
+.footer{
+    height: 100%;
+    width: 100%;
+    background-color: #242323;
+}
+
+.cnt-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* Index page styles */
+
+.container-main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    padding-top: 2rem;
+    min-height: 750px;
+    height: auto;
+}
+
+.intro-img{
+    position: relative;
+    min-width: auto;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.msn-txt{
+    display: flex;
+    align-items: center;
+    color: #323232;
+    font-size: 24px;
+    font-weight: 550;
+    padding-left: 20px;
+    float: left;
+}
+
+/* Catalogue page styles */
+.ctlg-img{
+    margin-left: 80px;
+    width: 70% ; 
+    height: 300px;
+}
+
+
+.ctlg-h{
+    font-size: 38px;
+    font-weight: 700;
+    color: rgb(94, 94, 94);;
+}
+
+.cnt-split{
+    padding: 2em;
+    width: 100%;
+    justify-items: center;
+}
+
+.cnt-split .cntr-0{
+    padding: 2%;
+    max-width: 800px;
+    padding-top: 4em;
+    display: inline-block;
+}
+
+.cnt-split .cntr-1{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: auto;
+    padding: 2em;
+    max-width: 450px; 
+    background-color: #0000003d;
+}
+
+.cntr-0, .cntr-1 { display: inline-block; width: 50%; max-width: 95%; }
+@media screen and (max-width: 600px) { .cntr-0, .cntr-1 { display: block; width: 100%; } }
+
+.cnt-split .cntr-2{
+    position: relative;
+    margin-top: -120px;
+    background-color: #ffffff;
+    opacity: 0.8;
+    border-radius: 20px;
+    min-width: 180px;
+    padding: 12px;
+    z-index: 1;
+
+}
+
+.form-1{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form_heading{
+    color: #323232;
+    font-size: 32px;
+    font-weight: 550;
+}
+
+.cnt-col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: normal;
+}
+
+.form_field {
+    display: flex;
+    flex-direction: column;
+    line-height: 16px;
+    margin-bottom: 16px;
+}
+
+.form_field .label{
+    overflow-y: hidden;
+}
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: transparent;
+    line-height: 20px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.submit_btn{
+    background-color: rgb(145 193 204);
+    border: 1px solid rgb(145 193 204);
+    border-radius: 70px;
+    width: 100px;
+    height: 45px;
+    color: azure;
+}
+
+.submit_btn:hover{
+    background-color: rgb(139, 221, 192);
+}
+
+.quote_page_img{
+    margin-top: 20px;
+    border-radius: 30px;
+
+}
+
+
+
+/* Catalogue */
+
+.product-list{
+  background-color: rgb(250, 245, 245);
+  padding: 2em;
+  width: 100%;
+  justify-items: center;
+
+}
+
+.product-list .card{
+  background-color: white;
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 0px 5px 5px rgb(170, 199, 206);
+  text-align: center;
+  margin: 10px;
+  width: 317px;
+  height: 374px;
+  float: left;
+}
+
+.card .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card .image {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.card .text {
+  text-align: center;
+  margin-left: 0px;
+  margin-bottom: 0.5em;
+}
+
+.product-container {
+  display: flexbox;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  /* grid-column-gap: 20px; */
+  flex-direction: column;
+}
