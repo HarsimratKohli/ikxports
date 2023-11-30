@@ -14,7 +14,7 @@ class ProductGrid extends HTMLElement {
                     out += `
                     <div class="card">
                     <div class="title">${product.name}</div>
-                    <div class="image">${product.image_src}</div>
+                    <img class="image" src=${product.image_src}></img>
                     <div class="text">${product.description}</div>
                     </div>
                     `;    
