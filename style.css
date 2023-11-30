@@ -64,7 +64,7 @@
 .quote_btn {
     background-color: rgb(145 193 204);
     border: 1px solid rgb(145 193 204);
-    border-radius: 8px;
+    border-radius: 5px;
     height: auto;
     padding: 5px;
     font: inherit;
@@ -130,14 +130,16 @@
 }
 
 .cnt-split{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;  
     padding: 2em;
     width: 100%;
-    justify-items: center;
 }
 
 .cnt-split .cntr-0{
     padding: 2%;
-    max-width: 800px;
+    max-width: auto;
     padding-top: 4em;
     display: inline-block;
 }
@@ -146,18 +148,21 @@
     float: right;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     height: auto;
     padding: 2em;
-    max-width: 450px; 
+    max-width: 650px;
     background-color: #0000003d;
+    border-radius: 12px;
 }
 
-.cntr-0, .cntr-1 { display: inline-block; width: 50%; max-width: 95%; }
+.cntr-0, .cntr-1 { display: inline-block; width: 60%; max-width: 95%; }
 @media screen and (max-width: 600px) { .cntr-0, .cntr-1 { display: block; width: 100%; } }
 
 .cnt-split .cntr-2{
+    display: flex;
+    flex-direction: column;
     position: relative;
     margin-top: -120px;
     background-color: #ffffff;
@@ -235,24 +240,28 @@ input:focus{
 /* Catalogue */
 
 .product-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;  
   background-color: rgb(250, 245, 245);
   padding: 2em;
-  width: 100%;
-  justify-items: center;
-
+  margin: 0 auto;
+  max-width: 100%;
 }
 
-.product-list .card{
-  background-color: white;
-  border-radius: 10px;
-  padding: 1em;
-  box-shadow: 0px 5px 5px rgb(170, 199, 206);
-  text-align: center;
-  margin: 10px;
-  width: 317px;
-  height: 374px;
-  float: left;
-}
+.product-list .card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0px 5px 5px rgb(170, 199, 206);
+    text-align: center;
+    gap: 2em;
+    width: 317px;
+    height: 374px;
+    margin-bottom: 20px; /* Adjust the vertical margin as needed */
+    transition: transform 0.8s;
+    backface-visibility: hidden; /* Hide the back face of the card */
+  }
 
 .card .title {
   font-size: 18px;
@@ -272,7 +281,5 @@ input:focus{
 
 .product-container {
   display: flexbox;
-  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-  /* grid-column-gap: 20px; */
   flex-direction: column;
 }

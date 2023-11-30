@@ -26,11 +26,11 @@ class Header extends HTMLElement {
                 <img src="../assets/logo.jpg" onclick="goToHome()" alt="" style="max-width: 100px; margin-right:auto;">
                 <div style="width: 100%;">
                     <nav class="nav-menu">
-                        <a class="nav-l" href="">Tracktor gears</a> 
+                        <a class="nav-l" href="">Tractor gears</a> 
                         <a class="nav-l" href="">Truck gears</a> 
                         <a class="nav-l  href="../catalogue.html" style="padding-right:25px" onclick="goToCatPage()">Catalog</a>
                         <div class="nav-l">
-                            <button id="btn_qte" class="quote_btn" onclick="goToQuotePage()">Get a Quote</button>
+                            <button id="btn_qte" class="quote_btn" onclick="goToQuotePage()">Get Quote</button>
                         </div>
                     </nav> 
                 </div>
