@@ -25,6 +25,12 @@
     margin: 10px;
 }
 
+@media screen and (min-width: 370px) and (max-width: 1024px) {
+  .header-text {
+    font-size: 14px;
+  }
+}
+
 .top-fixed{
     position: fixed;
     display: grid;
